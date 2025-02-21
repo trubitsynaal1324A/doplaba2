@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.swiper', {
         // Параметры слайдера
-        direction: 'horizontal', // или 'vertical'
+        direction: 'horizontal', // 
         loop: true, // Бесконечный слайдер
 
         // Пагинация
@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
 
-        // Навигация (стрелки)
+        // Стрелки
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
 
-        // Автопрокрутка (необязательно)
+        // Автопрокрутка 
         autoplay: {
             delay: 2500, // Задержка между слайдами в миллисекундах
             disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия пользователя
