@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
 
-        // Стрелки
+        // Навигация (стрелки)
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
