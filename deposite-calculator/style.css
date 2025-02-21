@@ -14,8 +14,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Adjust width as needed */
-    max-width: 500px; /* Максимальная ширина контейнера */
+    width: 80%;
+    max-width: 500px; 
 }
 
 label {
@@ -31,7 +31,7 @@ select {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Важно для корректного отображения ширины с учетом padding и border */
+    box-sizing: border-box; 
 }
 
 button {
@@ -55,10 +55,10 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
-    white-space: pre-line; /* Добавлено для корректного отображения переносов строк */
+    white-space: pre-line; 
 }
 
-/* Responsive Design (Mobile-First) */
+
 @media (max-width: 600px) {
     .container {
         width: 95%; /* Занимает больше места на маленьких экранах */

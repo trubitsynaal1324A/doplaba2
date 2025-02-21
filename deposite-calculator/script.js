@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultDiv = document.getElementById('result');
     const form = document.getElementById('depositForm');
 
-    // Данные по вкладам (можно вынести в отдельный файл JSON)
+    // Данные по вкладам 
     const depositRates = {
         "Пополняемый": {
-            "6 месяцев": 0.20,
-            "1 год": 0.22,
-            "1,5 года": 0.15,
-            "2 года": 0.10
+            "6 месяцев - 20%": 0.20,
+            "1 год - 22%": 0.22,
+            "1,5 года - 15%": 0.15,
+            "2 года - 10%": 0.10
         },
         "Срочный": {
-            "3 месяца": 0.20,
-            "6 месяцев": 0.22,
-            "9 месяцев": 0.23,
-            "1 год": 0.24,
-            "1,5 года": 0.18,
-            "2 года": 0.15
+            "3 месяца - 20%": 0.20,
+            "6 месяцев - 22%": 0.22,
+            "9 месяцев - 23%": 0.23,
+            "1 год - - 24%": 0.24,
+            "1,5 года - 18%": 0.18,
+            "2 года - 15%": 0.15
         }
     };
 
@@ -63,11 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const resultText = `Вклад "${depositType}" на срок "${depositTerm}" на сумму ${depositAmount.toFixed(2)} руб.\nВ конце срока вы получите ${finalAmount.toFixed(2)} руб.`;
             resultDiv.textContent = resultText;
         } else {
-            form.reportValidity(); // Покажет встроенные браузерные подсказки о невалидных полях
+            form.reportValidity(); // 
         }
     });
 
-    // Функция для преобразования срока вклада в месяцы (необязательно, но полезно)
+    // Функция для преобразования срока вклада в месяцы 
     function convertTermToMonths(term) {
         if (term.includes("месяц")) {
             return parseInt(term);
@@ -75,6 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const years = parseFloat(term);
             return years * 12;
         }
-        return 0; // Default to 0 if term is not recognized
+        return 0; 
     }
 });
