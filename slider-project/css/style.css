@@ -1,0 +1,30 @@
+/* Общие стили (по желанию) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Чтобы padding и border не влияли на общую ширину/высоту элемента*/
+}
+
+/* Стили для контейнера слайдера */
+.swiper {
+    width: 80%; /*Задаем ширину слайдера*/
+    height: 500px; /*Задаем высоту слайдера*/
+    margin: 20px auto; /*Центрируем слайдер*/
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Важно: растягивает и обрезает изображение, чтобы заполнить контейнер, сохраняя пропорции*/
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff; /* Цвет стрелок */
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff; /* Цвет активной точки пагинации */
+}
